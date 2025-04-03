@@ -1,7 +1,14 @@
+import "./style.css"
+
 export default function App () {
   return (
   <>
-    <h1>Hi!</h1>
+    <form className="new-item-form">
+      <div className="form-row">
+        <label>New Item</label>
+        
+      </div>
+    </form>
   </>
 )
 }
