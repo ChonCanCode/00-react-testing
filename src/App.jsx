@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./style.css"
 
 export default function App () {
-  useState()
+  const [newItem, setNewItem] = useState("")
   return (
   <>
     <form className="new-item-form">
