@@ -8,18 +8,14 @@ export default function App() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    setTodos([
-      ...todos,
-      { id: crypto.randomUUID(), title: newItem, completed: false },
-    ])
-
-    setTodos([
-      ...todos,
-      { id: crypto.randomUUID(), title: newItem, completed: false },
-    ])
+    setTodos((currentTodos) => {
+      return [
+        ...currentTodos,
+        { id: crypto.randomUUID(), title: newItem, completed: false },
+      ];
+    });
   }
-
-  console.log(todos)
+  console.log(todos);
 
   return (
     <>
