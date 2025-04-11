@@ -15,7 +15,6 @@ export default function App() {
       ];
     });
   }
-  console.log(todos);
 
   return (
     <>
@@ -29,9 +28,9 @@ export default function App() {
             id="item"
           />
         </div>
-
         <button className="btn">Add</button>
       </form>
+
       <h1 className="header">Todo List</h1>
       <ul className="list">
         {todos.map((todo) => {
